@@ -1,4 +1,4 @@
-# 🧰 AI Agent Service Toolkit
+# Everything AI
 
 ### Quickstart
 
@@ -8,7 +8,7 @@ Run directly in python
 # At least one LLM API key is required
 echo 'OPENAI_API_KEY=your_openai_api_key' >> .env
 
-# uv is the recommended way to install agent-service-toolkit, but "pip install ." also works
+# uv is the recommended way to install everything-ai, but "pip install ." also works
 # For uv installation options, see: https://docs.astral.sh/uv/getting-started/installation/
 curl -LsSf https://astral.sh/uv/0.7.19/install.sh | sh
 
