@@ -137,11 +137,6 @@ async def main() -> None:
             # Display user ID (for debugging or user information)
             st.text_input("User ID (read-only)", value=user_id, disabled=True)
 
-        
-
-        if st.button(":material/schema: Architecture", use_container_width=True):
-            architecture_dialog()
-
         with st.popover(":material/policy: Privacy", use_container_width=True):
             st.write(
                 "Prompts, responses and feedback in this app are anonymously recorded and saved to LangSmith for product evaluation and improvement purposes only."
@@ -167,9 +162,7 @@ async def main() -> None:
             share_chat_dialog()
 
         "[View the source code](https://github.com/pratirath06/everything-ai)"
-        st.caption(
-            "Made with :material/favorite: by [Pratirath](https://github.com/pratirath06/)"
-        )
+        st.caption("Made with :material/favorite: by [Pratirath](https://github.com/pratirath06/)")
 
     # Draw existing messages
     messages: list[ChatMessage] = st.session_state.messages
